@@ -9,5 +9,13 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean id="greeter" class="com.yoonji.jdbc.spring.Greeter" />
+	<bean id="memberDao" class="com.yoonji.book.example.MemberDao"/>
+	<bean id="articleService" class="com.yoonji.book.example.ArticleService">
+		<property name="memberDao" ref="memberDao"/>
+	</bean>
+	
+	<bean id="memberService" class="com.yoonji.book.example.MemberService">
+		<property name="memberDao" ref="memberDao"/>
+	</bean>
 
 </beans>
