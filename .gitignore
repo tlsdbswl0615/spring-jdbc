@@ -7,3 +7,5 @@ gradle/
 gradlew*
 gardlew.bat
 settings.gradle
+build/
+src/main/resources/db.properties
