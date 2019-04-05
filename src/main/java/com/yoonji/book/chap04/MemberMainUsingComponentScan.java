@@ -13,8 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MemberMainUsingComponentScan {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"chap04.xml");
+		ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("chap04.xml");
 		MemberRegisterService regService = ctx.getBean("memberRegisterService",
 				MemberRegisterService.class);
 		
